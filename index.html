@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Video con Preguntas</title>
+    <style>
+        /* Estilo básico para centrar el contenido */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #video {
+            width: 600px;
+            height: 400px;
+        }
+        .question {
+            display: none; /* Ocultar por defecto */
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById("video");
+            const question1 = document.getElementById("question1");
+            const question2 = document.getElementById("question2");
+
+            video.addEventListener("timeupdate", function () {
+                // Mostrar la primera pregunta a los 10 segundos
+                if (video.currentTime > 10 && video.currentTime < 12) {
+                    question1.style.display = "block";
+                } else {
+                    question1.style.display = "none";
+                }
+
+                // Mostrar la segunda pregunta a los 20 segundos
+                if (video.currentTime > 20 && video.currentTime < 22) {
+                    question2.style.display = "block";
+                } else {
+                    question2.style.display = "none";
+                }
+            });
+
+            video.addEventListener("ended", function () {
+                // Mensaje al finalizar el video
+                alert("¡Video terminado!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Video con Preguntas Interactivas</h1>
+    <video id="video" controls>
+        <source src="tu_video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <div id="question1" class="question">
+        <p>Pregunta 1: ¿Cuál es tu color favorito?</p>
+        <input type="text" placeholder="Tu respuesta">
+        <button>Enviar</button>
+    </div>
+
+    <div id="question2" class="question">
+        <p>Pregunta 2: ¿Cuál es tu comida favorita?</p>
+        <input type="text" placeholder="Tu respuesta">
+        <button>Enviar</button>
+    </div>
+</body>
+</html>
