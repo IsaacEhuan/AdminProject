@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fondo ligeramente gris claro */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4e6cef; /* Azul vivo para el encabezado */
+    padding: 20px 0;
+    border-bottom: 2px solid #2b4ca8; /* Borde inferior azul oscuro */
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilos para el cuerpo principal */
+main {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e0e0e0; /* Fondo gris claro para el cuerpo principal */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para el recuadro de puntuación */
+.score-box {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuir los elementos horizontalmente */
+    margin-bottom: 10px;
+}
+
+.label {
+    flex: 1;
+}
+
+.count {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para los contadores de aciertos y errores */
+#aciertos {
+    color: #28a745; /* Verde suave para los aciertos */
+}
+
+#errores {
+    color: #dc3545; /* Rojo suave para los errores */
+}
+
+/* Estilos específicos para el marcador */
+.score-box .score {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#aciertos {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #d4edda; /* Fondo verde claro para aciertos */
+}
+
+#errores {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f8d7da; /* Fondo rojo claro para errores */
+}
+
+
+/* Estilos para el video */
+.embed-responsive {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.embed-responsive video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #4e6cef; /* Azul vivo para el pie de página */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #2b4ca8; /* Borde superior azul oscuro */
+}
