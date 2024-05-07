@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video con Preguntas</title>
     <link href="styles.css" rel="stylesheet"> <!-- Mantener enlace a tu archivo CSS personalizado -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById("video");
+            const question1 = document.getElementById("question1");
+            const question2 = document.getElementById("question2");
+
+            video.addEventListener("timeupdate", function () {
+                // Mostrar la primera pregunta a los 10 segundos
+                if (video.currentTime > 10 && video.currentTime < 12) {
+                    question1.style.display = "block";
+                } else {
+                    question1.style.display = "none";
+                }
+
+                // Mostrar la segunda pregunta a los 20 segundos
+                if (video.currentTime > 20 && video.currentTime < 22) {
+                    question2.style.display = "block";
+                } else {
+                    question2.style.display = "none";
+                }
+            });
+
+            video.addEventListener("ended", function () {
+                // Mensaje al finalizar el video
+                alert("¡Video terminado!");
+            });
+        });
+    </script>
 </head>
 <body>
     <header class="bg-primary text-white py-4">
