@@ -28,7 +28,7 @@ h1 {
 main {
     margin-top: 40px;
     padding: 20px;
-    background-color: #e0e0e0; /* Fondo gris claro para el cuerpo principal */
+    background-color: #f0f0f0; /* Fondo gris claro para el cuerpo principal */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }

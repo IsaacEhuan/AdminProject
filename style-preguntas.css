@@ -1,0 +1,58 @@
+/* Estilo para las preguntas */
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.video-container, .question-container {
+    flex: 1;
+    margin: 10px;
+}
+
+.question-container {
+    display: none;
+}
+
+.question-box {
+    background-color: #f3f3f3;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.question-box p {
+    font-size: 1.2em;
+}
+
+.question-box button {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1c84e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question-box button:hover {
+    background-color: #155ca8;
+}
+
+.video-container {
+    position: relative;
+}
+
+.question-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(245, 245, 245, 0.808);
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}

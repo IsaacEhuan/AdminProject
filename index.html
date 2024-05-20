@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video con Preguntas</title>
     <link href="styles.css" rel="stylesheet"> <!-- Mantener enlace a tu archivo CSS personalizado -->
+    <link href="style-preguntas.css" rel="stylesheet">
 </head>
 <body>
     <header class="bg-primary text-white py-4">
@@ -13,11 +14,16 @@
         </div>
     </header>
     <main class="container mt-4">
-        <div class="embed-responsive embed-responsive-16by9">
-            <video id="video" class="embed-responsive-item" controls>
-                <source src="video.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
+        <div class="container-flex">
+            <div class="video-container embed-responsive embed-responsive-16by9">
+                <video id="video" class="embed-responsive-item" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <div class="question-overlay" id="question-overlay">
+                    <!-- Las preguntas aparecerán aquí -->
+                </div>
+            </div>
         </div>
         <div class="score-box">
             <div class="score">
@@ -35,6 +41,6 @@
             <!-- Aquí puedes agregar información adicional o enlaces -->
             <p>© 2024 Video con Preguntas. Todos los derechos reservados.</p>
         </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
